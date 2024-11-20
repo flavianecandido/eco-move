@@ -6,12 +6,12 @@ export function Home() {
   return (
     <div className="grid grid-cols-2 justify-center items-center h-dvh gap-20 px-14">
       <div>
-        <img src="src/assets/electric-car.png" alt="" />
+        <img src="src/assets/electric-car-amico.png" alt="" />
       </div>
       <div className="flex flex-col justify-between items-center h-[430px]">
         <h1 className="text-3xl">
           Bem-vindo(a) à{" "}
-          <span className="text-emerald-700 font-semibold">EcoMove</span>!
+          <span className='text-teal-500 font-semibold'>EcoMove</span>!
         </h1>
         <div className="space-y-2 text-center text-slate-700 text-xl leading-6">
           <p>
@@ -31,7 +31,7 @@ export function Home() {
         <div>
           <Button
             onClick={() => navigate("/chatbot")}
-            className="bg-emerald-600 text-white font-bold text-xl rounded hover:bg-emerald-700"
+            className="bg-teal-500 hover:bg-teal-400 text-white font-bold text-xl rounded"
           >
             Falar com a Lumi
           </Button>

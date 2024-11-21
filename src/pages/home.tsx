@@ -6,7 +6,7 @@ export function Home() {
   return (
     <div className="grid grid-cols-2 justify-center items-center h-dvh gap-20 px-14">
       <div>
-        <img src="src/assets/electric-car-amico.png" alt="" />
+        <img src="/eletric-car-amico.png" alt="" />
       </div>
       <div className="flex flex-col justify-between items-center h-[430px]">
         <h1 className="text-3xl">

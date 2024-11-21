@@ -4,9 +4,10 @@ import { WatsonMsgResponse, WatsonSessionResponse } from "./types";
 
 export function useAssistanceChatbot() {
   const createSession = React.useCallback(async () => {
-    const response = await watsonApi.post<WatsonSessionResponse>(
+    const response = await watsonApi.get<WatsonSessionResponse>(
       "/watson/session"
     );
+
     return response.data;
   }, []);
 
@@ -19,6 +20,7 @@ export function useAssistanceChatbot() {
           message,
         }
       );
+
       return response.data;
     },
     []

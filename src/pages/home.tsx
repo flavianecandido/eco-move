@@ -1,17 +1,18 @@
 import { useNavigate } from "react-router-dom";
 import { Button } from "../components/ui/button";
+import carImg from "../assets/electric-car-amico.png";
 
 export function Home() {
   const navigate = useNavigate();
   return (
     <div className="grid grid-cols-2 justify-center items-center h-dvh gap-20 px-14">
       <div>
-        <img src="/eletric-car-amico.png" alt="" />
+        <img src={carImg} alt="" />
       </div>
       <div className="flex flex-col justify-between items-center h-[430px]">
         <h1 className="text-3xl">
           Bem-vindo(a) à{" "}
-          <span className='text-teal-500 font-semibold'>EcoMove</span>!
+          <span className="text-teal-500 font-semibold">EcoMove</span>!
         </h1>
         <div className="space-y-2 text-center text-slate-700 text-xl leading-6">
           <p>
